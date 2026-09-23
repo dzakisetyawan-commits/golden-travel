@@ -179,8 +179,35 @@
           <a class="font-jakarta font-extrabold text-2xl">Persewaan Kendaraan</a>
 
           <!-- CARD -->
-          <div>
-               <img src="{{ asset('/img/card/card-innova.webp') }}">
+          <div class="grid md:grid-cols-2 mt-6">
+               <div class="flex flex-row gap-[20px]">
+                    <img src="{{ asset('/img/card/card-alphard.webp') }}" loading="lazy" alt="Bandung" class="w-[279px] h-[240px]">
+                    
+                    <div class="font-jakarta flex flex-col gap-[16px]">
+                         <a class="font-extrabold text-[20px]">Kendaraan Premium</a>
+
+                         <ul class="flex flex-col gap-[16px]">
+                              <li class="text-[20px]">1. Toyota Alphard</li>
+                              <li class="text-[20px]">2. Mitsubishi Pajero</li>
+                              <li class="text-[20px]">3. Toyota Fortuner</li>
+                              <li class="text-[20px]">4. Hiace </li>
+                         </ul>
+                    </div>
+               </div>
+               <!--  -->
+               <div class="flex flex-row gap-[20px]">
+                    <img src="{{ asset('/img/card/card-innova.webp') }}" loading="lazy" alt="Bandung" class="w-[279px] h-[240px]">
+                    
+                    <div class="font-jakarta flex flex-col gap-[16px]">
+                         <a class="font-extrabold text-[20px]">Kendaraan Regular</a>
+
+                         <ul class="flex flex-col gap-[16px]">
+                              <li class="text-[20px]">1. Toyota Innova</li>
+                              <li class="text-[20px]">2. Toyota Avanza</li>
+                              <li class="text-[20px]">3. Hiace Commuter</li>
+                         </ul>
+                    </div>
+               </div>
           </div>
      </div>
  </section>
