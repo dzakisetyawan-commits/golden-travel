@@ -304,4 +304,12 @@
      </div>
 </section>
 <!-- End Why us -->
+
+<!-- Gallery -->
+<section class="px-15 mt-15">
+     <div class="font-jakarta flex flex-col">
+          <a class="font-extrabold text-2xl">Ciptakan Momenmu</a>
+          <a>Bukan sekedar perjalanan, tetapi pengalaman yang akan kamu bawa pulang.</a>
+     </div>
+</section>
 @endsection
