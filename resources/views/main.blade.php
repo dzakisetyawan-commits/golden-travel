@@ -225,4 +225,83 @@
           </div>
      </div>
  </section>
+ <!-- End Persewaan -->
+
+ <!-- Paket -->
+<section class="w-full min-h-screen bg-[url('/public/img/main-image2.webp')] bg-no-repeat bg-center bg-cover mt-10">
+
+     <div class="px-15 py-18">
+          <a class="font-jakarta font-extrabold text-2xl">Paket Wisata</a>
+     </div>
+
+     <div class="mx-15">
+          <div class="grid md:grid-cols-2 gap-14">
+               <div class="bg-white font-jakarta flex flex-col gap-[36px] p-8 rounded-3xl">
+                    <a class="font-extrabold text-2xl">City Tour Malang</a>
+                    <a class="font-extrabold text-5xl">4D3N</a>
+                    <div class="flex flex-col gap-[18px] font-medium">
+                         <a>• 11 Destinasi</a>
+                         <a>• Makan 9 kali</a>
+                         <a>• Sarapan Hotel 4 kali</a>
+                         <a>• Hotel 3 Malam</a>
+                         <a class="text-gray-400">Dan sebagainya...</a>
+                    </div>
+                    <x-g-button>Lihat Paket</x-g-button>
+               </div>
+
+               <div class="bg-white font-jakarta flex flex-col gap-[36px] p-8 rounded-3xl">
+                    <a class="font-extrabold text-2xl">City Tour Malang</a>
+                    <a class="font-extrabold text-5xl">3D2N</a>
+                    <div class="flex flex-col gap-[18px] font-medium">
+                         <a>• 7 Destinasi</a>
+                         <a>• Makan 6 kali</a>
+                         <a>• Sarapan Hotel 2 kali</a>
+                         <a>• Hotel 2 Malam</a>
+                         <a class="text-gray-400">Dan sebagainya...</a>
+                    </div>
+                    <x-g-button>Lihat Paket</x-g-button>
+               </div>
+          </div>
+     </div>
+</section>
+<!-- End Paket -->
+
+<!-- Why us -->
+<section>
+     <div class="grid md:grid-cols-2 font-jakarta p-15 justify-between gap-[70px]">
+          <a class="font-extrabold text-5xl">Mengapa harus kami?</a>
+
+          <div class="font-medium flex flex-col gap-2 text-lg">
+               <a>Golden Travel menghadirkan perjalanan yang nyaman, aman, fleksibel, dan berkesan di Malang, Batu, Bromo, serta berbagai destinasi Jawa Timur.</a>
+               <ul>
+                    <li>1. Berpengalaman & Paham Destinasi</li>
+                    <li>2. Pelayanan Personal</li>
+                    <li>3. Paket Fleksibel</li>
+                    <li>4. Nyaman & Terencana</li>
+                    <li>5. Untuk Berbagai Kebutuhan</li>
+                    <li>6. Transparan & Profesional</li>
+               </ul>
+          </div>
+     </div>
+
+     <div class="grid md:grid-cols-4 px-15 gap-[200px]">
+          <div class="flex flex-col font-jakarta">
+               <a class="font-extrabold text-5xl text-[#C99A3E]">1.000+</a>
+               <a class="text-gray-400 font-medium text-lg">Wisatawan Dilayani</a>
+          </div>
+          <div class="flex flex-col font-jakarta">
+               <a class="font-extrabold text-5xl text-[#C99A3E]">100+</a>
+               <a class="text-gray-400 font-medium text-lg">Perjalanan</a>
+          </div>
+          <div class="flex flex-col font-jakarta">
+               <a class="font-extrabold text-5xl text-[#C99A3E]">50+</a>
+               <a class="text-gray-400 font-medium text-lg">Destinasi</a>
+          </div>
+          <div class="flex flex-col font-jakarta">
+               <a class="font-extrabold text-5xl text-[#C99A3E]">9+</a>
+               <a class="text-gray-400 font-medium text-lg">Tahun Pengalaman</a>
+          </div>
+     </div>
+</section>
+<!-- End Why us -->
 @endsection
