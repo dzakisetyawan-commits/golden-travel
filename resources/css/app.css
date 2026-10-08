@@ -6,4 +6,26 @@
 
 @theme {
     --font-jakarta: "Plus Jakarta Sans", sans-serif;
+    --animate-carousel: carousel 40s infinite linear;
+    --animate-carousel1: carousel1 40s infinite linear;
 }
+
+@keyframes carousel {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+@keyframes carousel1 {
+        from {
+            transform: translateX(-50%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }

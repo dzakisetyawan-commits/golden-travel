@@ -306,10 +306,58 @@
 <!-- End Why us -->
 
 <!-- Gallery -->
-<section class="px-15 mt-15">
-     <div class="font-jakarta flex flex-col">
-          <a class="font-extrabold text-2xl">Ciptakan Momenmu</a>
-          <a>Bukan sekedar perjalanan, tetapi pengalaman yang akan kamu bawa pulang.</a>
+<section>
+     <div class="px-15 mt-15">
+          <div class="font-jakarta flex flex-col">
+               <a class="font-extrabold text-2xl">Ciptakan Momenmu</a>
+               <a>Bukan sekedar perjalanan, tetapi pengalaman yang akan kamu bawa pulang.</a>
+          </div>
+     </div>
+     
+     <div class="mt-6 mb-15 flex flex-col gap-5">
+          <div class="flex overflow-hidden">
+               <div class="flex w-max shrink-0 animate-carousel">
+                    <div class="flex shrink-0 items-center">
+                         <img src="{{ asset('img/carousel/adsd_4_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/DSC04364_1_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/asda_5_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/DSC04546_2_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/IMG_8203_6_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/DSC04601_8_11zon.webp') }}" class="h-[225px] w-auto">
+                    </div>
+
+                    <div class="flex shrink-0 items-center">
+                         <img src="{{ asset('img/carousel/adsd_4_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/DSC04364_1_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/asda_5_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/DSC04546_2_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/IMG_8203_6_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/DSC04601_8_11zon.webp') }}" class="h-[225px] w-auto">
+                    </div>
+               </div>
+          </div>
+
+          <div class="flex overflow-hidden">
+               <div class="flex w-max shrink-0 animate-carousel1">
+                    <div class="flex shrink-0 items-center">
+                         <img src="{{ asset('img/carousel/IMG_8273_7_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/MOV06964_3_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/WhatsApp Image 2026-10-08 at 14.07.45_6_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/MOV07309_5_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/MOV07350_1_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/WhatsApp Image 2026-10-08 at 14.07.57_3_11zon.webp') }}" class="h-[225px] w-auto">
+                    </div>
+
+                    <div class="flex shrink-0 items-center">
+                         <img src="{{ asset('img/carousel/IMG_8273_7_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/MOV06964_3_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/WhatsApp Image 2026-10-08 at 14.07.45_6_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/WhatsApp Image 2026-10-08 at 14.07.53_7_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/MOV07350_1_11zon.webp') }}" class="h-[225px] w-auto">
+                         <img src="{{ asset('img/carousel/WhatsApp Image 2026-10-08 at 14.07.57_3_11zon.webp') }}" class="h-[225px] w-auto">
+                    </div>
+               </div>
+          </div>
      </div>
 </section>
 <!-- End Gallery -->
