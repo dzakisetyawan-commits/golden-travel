@@ -85,7 +85,7 @@
                                    <a class="text-2xl font-extrabold">Navigasi</a>
                                    <ul class="flex flex-col gap-[21px]">
                                         <li>
-                                             <a href="" class="relative transition-all duration-300 inline-block font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-[#C99A3E] hover:text-[#C99A3E] hover:after:w-full after:transition-all after:duration-300 after:ease-out">
+                                             <a href="/destinasi" class="relative transition-all duration-300 inline-block font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-[#C99A3E] hover:text-[#C99A3E] hover:after:w-full after:transition-all after:duration-300 after:ease-out">
                                                   Destinasi
                                              </a>
                                         </li>
@@ -100,7 +100,7 @@
                                              </a>
                                         </li>
                                         <li>
-                                             <a href="" class="relative transition-all duration-300 inline-block font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-[#C99A3E] hover:text-[#C99A3E] hover:after:w-full after:transition-all after:duration-300 after:ease-out">
+                                             <a href="{{ url('/#galeri') }}" class="relative transition-all duration-300 inline-block font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-[#C99A3E] hover:text-[#C99A3E] hover:after:w-full after:transition-all after:duration-300 after:ease-out">
                                                   Galeri
                                              </a>
                                         </li>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,10 +19,10 @@
 
         <div class="flex flex-row gap-6 items-center">
             <ul class="font-jakarta flex flex-row gap-6 text-black" >
-                <li><a href=""class="cursor-pointer relative inline-block font-medium after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-full after:h-0.5 after:bg-black after:-translate-x-1/2 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-out">Destinasi</a></li>
+                <li><a href="/destinasi"class="cursor-pointer relative inline-block font-medium after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-full after:h-0.5 after:bg-black after:-translate-x-1/2 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-out">Destinasi</a></li>
                 <li><a class="cursor-pointer relative inline-block font-medium after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-full after:h-0.5 after:bg-black after:-translate-x-1/2 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-out">Paket</a></li>
                 <li><a href="/tentang" class="cursor-pointer relative inline-block font-medium after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-full after:h-0.5 after:bg-black after:-translate-x-1/2 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-out">Tentang</a></li>
-                <li><a class="cursor-pointer relative inline-block font-medium after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-full after:h-0.5 after:bg-black after:-translate-x-1/2 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-out">Galeri</a></li>
+                <li><a href="#galeri" class="cursor-pointer relative inline-block font-medium after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:w-full after:h-0.5 after:bg-black after:-translate-x-1/2 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-out">Galeri</a></li>
             </ul>
 
             <x-g-button>

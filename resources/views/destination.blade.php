@@ -1,70 +1,16 @@
-@extends ('layout.app')
+@extends ('layout.app2')
 
-@section('content')
-
-<!-- Hero -->
-<section class="w-full min-h-screen bg-[url('/public/img/main-image.webp')] bg-no-repeat bg-center bg-cover">
-
-     <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"></div>
-
-     <div class="relative flex flex-col min-h-screen justify-center px-15 w-xl gap-7">     
-          <p class="font-jakarta text-white font-extrabold text-5xl">Temukan Destinasi Ciptakan Cerita</p>
-          <p class="font-jakarta text-white text-lg">Jelajahi destinasi pilihan dan ciptakan momen perjalanan yang berkesan.</p>
-
-          <div class="font-jakarta flex flex-row gap-2">
-               <x-b-button>Jelajahi Destinasi</x-b-button>
-               <x-g-button class="border-[#C99A3E] border-2 hover:border-[#B08738]">Pesan Sekarang →</x-g-button>
-          </div>
-     </div>
+<section class="w-full min-h-[50vh] bg-[url('/public/img/second-image.webp')] bg-no-repeat bg-center bg-cover">
+    <div class="font-jakarta text-white flex flex-col gap-[20px] justify-center items-center w-full min-h-[50vh]">
+        <a class="font-medium text-2xl text-white/50">Pelayanan</a>
+        <h2 class="text-5xl font-extrabold">Wisata</h2>
+        <a>Jelajahi berbagai destinasi pilihan bersama kami.</a>
+    </div>
 </section>
-<!-- End Hero -->
 
-<!-- Pelayanan -->
-<section class="relative z-10 -mt-16 mx-auto w-4/5 rounded-2xl bg-white shadow-lg">
-     <div class="flex flex-col gap-4 p-8">
-          <div>
-               <a class="font-jakarta font-extrabold text-2xl">Pelayanan</a>
-          </div>
-
-          <div class="flex flex-col gap-5">
-               <div class="grid md:grid-cols-3 gap-15">
-                    <x-pelayanan-card onclick="window.location.href='{{ url('/destinasi') }}'">
-                         <img class="w-12 h-12" src="{{ asset('img/menu/wisata.png') }}">
-                         <a class="font-jakarta">Wisata</a>
-                    </x-pelayanan-card>
-                    <x-pelayanan-card onclick="window.location.href='{{ url('/rentcar') }}'">
-                         <img class="w-12 h-12" src="{{ asset('img/menu/rental.png') }}">
-                         <a class="font-jakarta">Sewa Kendaraan</a>
-                    </x-pelayanan-card>
-                    <x-pelayanan-card onclick="window.location.href='{{ url('') }}'">
-                         <img class="w-12 h-12" src="{{ asset('img/menu/villa.png') }}">
-                         <a class="font-jakarta">Sewa Villa</a>
-                    </x-pelayanan-card>
-               </div>
-
-               <div class="grid md:grid-cols-3 gap-15">
-                    <x-pelayanan-card>
-                         <img class="w-12 h-12" src="{{ asset('img/menu/gathering.png') }}">
-                         <a class="font-jakarta">Gathering & Outbond</a>
-                    </x-pelayanan-card>
-                    <x-pelayanan-card>
-                         <img class="w-12 h-12" src="{{ asset('img/menu/religi.png') }}">
-                         <a class="font-jakarta">Wisata Religi & Edukasi</a>
-                    </x-pelayanan-card>
-                    <x-pelayanan-card>
-                         <img class="w-12 h-12" src="{{ asset('img/menu/business.png') }}">
-                         <a class="font-jakarta">Perjalanan Bisnis</a>
-                    </x-pelayanan-card>
-               </div>
-          </div>
-     </div>
-</section>
-<!-- End Pelayanan -->
-
-<!-- Destinasi -->
- <section class="mt-10">
+<section class="mt-10">
      <div class="flex flex-row justify-between w-full items-center px-15">
-          <a class="font-jakarta font-extrabold text-2xl">Destinasi Unggulan</a>
+          <a class="font-jakarta font-extrabold text-2xl">Wisata Tujuan</a>
           <div class="flex items-center gap-4">
 
           <button type="button" class="cursor-pointer group flex size-10 items-center justify-center rounded-full border-4 border-[#C8A060] bg-white text-[#C8A060] transition-all hover:bg-[#C8A060] hover:text-white">
@@ -171,199 +117,103 @@
           </div>
      </div>
  </section>
- <!-- End Destinasi -->
 
- <!-- Persewaan -->
- <section id="persewaan" class="mt-7">
-     <div class="px-15">
-          <a class="font-jakarta font-extrabold text-2xl">Persewaan Kendaraan</a>
+ <section class="mt-10">
+     <div class="flex flex-row justify-between w-full items-center px-15">
+          <a class="font-jakarta font-extrabold text-2xl">Alam dan Petualangan</a>
+          <div class="flex items-center gap-4">
 
-          <!-- CARD -->
-          <div class="grid md:grid-cols-2 mt-6 gap-8">
-               <div>
-                    <div class="flex flex-row gap-[20px] border border-2 border-black rounded-4xl">
-                         <img src="{{ asset('/img/card/card-alphard.webp') }}" loading="lazy" alt="Bandung" class="w-[279px] h-[240px]">
-                         
-                         <div class="font-jakarta flex flex-col gap-[16px] mt-3">
-                              <a class="font-extrabold text-[20px]">Kendaraan Premium</a>
+          <button type="button" class="cursor-pointer group flex size-10 items-center justify-center rounded-full border-4 border-[#C8A060] bg-white text-[#C8A060] transition-all hover:bg-[#C8A060] hover:text-white">
+               <svg class="size-6 shrink-0 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"/>
+               </svg>
+          </button>
 
-                              <ul class="flex flex-col gap-[16px]">
-                                   <li class="text-[20px]">1. Toyota Alphard</li>
-                                   <li class="text-[20px]">2. Mitsubishi Pajero</li>
-                                   <li class="text-[20px]">3. Toyota Fortuner</li>
-                                   <li class="text-[20px]">4. Hiace </li>
-                              </ul>
-                         </div>
+          <button type="button" class="cursor-pointer group flex size-10 items-center justify-center rounded-full border-4 border-[#C8A060] bg-white text-[#C8A060] transition-all hover:bg-[#C8A060] hover:text-white">
+               <svg class="size-6 shrink-0 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"/>
+               </svg>
+          </button>
+
+          </div>
+     </div>
+
+     <!-- CARD -->
+
+     <div class="overflow-x-auto">
+          <div class="flex flex-row gap-[38px] pl-15 my-6">
+
+               <div class="relative w-[261px] h-[306px] overflow-hidden rounded-[25px] shrink-0">
+                    <img src="{{ asset('/img/card/card-bandung.webp') }}" loading="lazy" alt="Bandung" class="absolute inset-0 h-full w-full object-cover">
+
+                    <div class="absolute bottom-[26px] left-[26px] text-white flex flex-col font-jakarta">
+                         <p class="text-[20px] font-bold">Bandung</p>
+                         <p class="text-[20px]">Jawa Barat</p>
                     </div>
-                    <div class="mt-4 flex justify-end">
-                         <x-g-button>
-                              Pesan Sekarang →
-                         </x-g-button>
-                    </div>
+
+                    <button class="absolute bottom-[26px] right-[26px] flex h-[56px] w-[56px] cursor-pointer items-center justify-center rounded-xl bg-[#D9A72E] bg-[#d4a342] text-[#1e1e1e] transition-all duration-200  hover:bg-[#b88a32]" aria-label="Panah ke atas">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                         </svg>
+                    </button>
                </div>
-               <!--  -->
-               <div>
-                    <div class="flex flex-row gap-[20px] border border-2 border-black rounded-4xl">
-                         <img src="{{ asset('/img/card/card-innova.webp') }}" loading="lazy" alt="Bandung" class="w-[279px] h-[240px]">
-                         
-                         <div class="font-jakarta flex flex-col gap-[16px] mt-3">
-                              <a class="font-extrabold text-[20px]">Kendaraan Regular</a>
 
-                              <ul class="flex flex-col gap-[16px]">
-                                   <li class="text-[20px]">1. Toyota Innova</li>
-                                   <li class="text-[20px]">2. Toyota Avanza</li>
-                                   <li class="text-[20px]">3. Hiace Commuter</li>
-                              </ul>
-                         </div>
+               <!--  -->
+
+               <div class="relative w-[261px] h-[306px] overflow-hidden rounded-[25px] shrink-0">
+                    <img src="{{ asset('/img/card/card-surakarta.webp') }}" loading="lazy" alt="Surakarta" class="absolute inset-0 h-full w-full object-cover">
+
+                    <div class="absolute bottom-[26px] left-[26px] text-white flex flex-col font-jakarta">
+                         <p class="text-[20px] font-bold">Surakarta</p>
+                         <p class="text-[20px]">Jawa Tengah</p>
                     </div>
-                    <div class="mt-4 flex justify-end">
-                         <x-g-button>
-                              Pesan Sekarang →
-                         </x-g-button>
+
+                    <button class="absolute bottom-[26px] right-[26px] flex h-[56px] w-[56px] cursor-pointer items-center justify-center rounded-xl bg-[#D9A72E] bg-[#d4a342] text-[#1e1e1e] transition-all duration-200  hover:bg-[#b88a32]" aria-label="Panah ke atas">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                         </svg>
+                    </button>
+               </div>
+
+               <!--  -->
+
+               <div class="relative w-[261px] h-[306px] overflow-hidden rounded-[25px] shrink-0">
+                    <img src="{{ asset('/img/card/card-malang.webp') }}" loading="lazy" alt="Malang" class="absolute inset-0 h-full w-full object-cover">
+
+                    <div class="absolute bottom-[26px] left-[26px] text-white flex flex-col font-jakarta">
+                         <p class="text-[20px] font-bold">Malang</p>
+                         <p class="text-[20px]">Jawa Timur</p>
                     </div>
+
+                    <button class="absolute bottom-[26px] right-[26px] flex h-[56px] w-[56px] cursor-pointer items-center justify-center rounded-xl bg-[#D9A72E] bg-[#d4a342] text-[#1e1e1e] transition-all duration-200  hover:bg-[#b88a32]" aria-label="Panah ke atas">
+                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                         </svg>
+                    </button>
                </div>
           </div>
      </div>
  </section>
- <!-- End Persewaan -->
 
- <!-- Paket -->
-<section class="w-full min-h-screen bg-[url('/public/img/main-image2.webp')] bg-no-repeat bg-center bg-cover mt-10">
+<section class="mt-10 px-15">
+     <a class="font-jakarta font-extrabold text-2xl">City Tour</a>
 
-     <div class="px-15 py-18">
-          <a class="font-jakarta font-extrabold text-2xl">Paket Wisata</a>
-     </div>
+     <div class="flex flex-row gap-15 mt-6 mb-15">
+          <img src="{{ asset('img/Rectangle 59.png') }}" class="w-[435px] h-[305px]">
 
-     <div class="mx-15">
-          <div class="grid md:grid-cols-2 gap-14">
-               <div class="bg-white font-jakarta flex flex-col gap-[36px] p-8 rounded-3xl">
-                    <a class="font-extrabold text-2xl">City Tour Malang</a>
-                    <a class="font-extrabold text-5xl">4D3N</a>
-                    <div class="flex flex-col gap-[18px] font-medium">
-                         <a>• 11 Destinasi</a>
-                         <a>• Makan 9 kali</a>
-                         <a>• Sarapan Hotel 4 kali</a>
-                         <a>• Hotel 3 Malam</a>
-                         <a class="text-gray-400">Dan sebagainya...</a>
-                    </div>
-                    <x-g-button>Lihat Paket</x-g-button>
+          <div class="flex flex-col justify-between">
+               <div class="flex flex-col gap-6">
+                    <a class="font-jakarta font-extrabold text-2xl">Jelajahi Kota</a>
+
+                    <a>Jelajahi berbagai destinasi menarik bersama Golden Tour ’n Travel dan nikmati pengalaman perjalanan yang nyaman dan menyenangkan. Mulai dari wisata alam yang memukau, tempat ikonik di berbagai kota, hingga wisata kuliner khas daerah, kami siap menemani setiap perjalanan Anda. Ciptakan momen berharga dan temukan cerita baru di setiap destinasi bersama kami.</a>
                </div>
 
-               <div class="bg-white font-jakarta flex flex-col gap-[36px] p-8 rounded-3xl">
-                    <a class="font-extrabold text-2xl">City Tour Malang</a>
-                    <a class="font-extrabold text-5xl">3D2N</a>
-                    <div class="flex flex-col gap-[18px] font-medium">
-                         <a>• 7 Destinasi</a>
-                         <a>• Makan 6 kali</a>
-                         <a>• Sarapan Hotel 2 kali</a>
-                         <a>• Hotel 2 Malam</a>
-                         <a class="text-gray-400">Dan sebagainya...</a>
-                    </div>
-                    <x-g-button>Lihat Paket</x-g-button>
-               </div>
+               <x-g-button class="w-[200px] h-auto">Pesan Sekarang →</x-g-button>
           </div>
      </div>
 </section>
-<!-- End Paket -->
 
-<!-- Why us -->
-<section>
-     <div class="grid md:grid-cols-2 font-jakarta p-15 justify-between gap-[70px]">
-          <a class="font-extrabold text-5xl">Mengapa harus kami?</a>
-
-          <div class="font-medium flex flex-col gap-2 text-lg">
-               <a>Golden Travel menghadirkan perjalanan yang nyaman, aman, fleksibel, dan berkesan di Malang, Batu, Bromo, serta berbagai destinasi Jawa Timur.</a>
-               <ul>
-                    <li>1. Berpengalaman & Paham Destinasi</li>
-                    <li>2. Pelayanan Personal</li>
-                    <li>3. Paket Fleksibel</li>
-                    <li>4. Nyaman & Terencana</li>
-                    <li>5. Untuk Berbagai Kebutuhan</li>
-                    <li>6. Transparan & Profesional</li>
-               </ul>
-          </div>
-     </div>
-
-     <div class="grid md:grid-cols-4 px-15 gap-[200px]">
-          <div class="flex flex-col font-jakarta">
-               <a class="font-extrabold text-5xl text-[#C99A3E]">1.000+</a>
-               <a class="text-gray-400 font-medium text-lg">Wisatawan Dilayani</a>
-          </div>
-          <div class="flex flex-col font-jakarta">
-               <a class="font-extrabold text-5xl text-[#C99A3E]">100+</a>
-               <a class="text-gray-400 font-medium text-lg">Perjalanan</a>
-          </div>
-          <div class="flex flex-col font-jakarta">
-               <a class="font-extrabold text-5xl text-[#C99A3E]">50+</a>
-               <a class="text-gray-400 font-medium text-lg">Destinasi</a>
-          </div>
-          <div class="flex flex-col font-jakarta">
-               <a class="font-extrabold text-5xl text-[#C99A3E]">9+</a>
-               <a class="text-gray-400 font-medium text-lg">Tahun Pengalaman</a>
-          </div>
-     </div>
-</section>
-<!-- End Why us -->
-
-<!-- Gallery -->
-<section id="galeri">
-     <div class="px-15 mt-15">
-          <div class="font-jakarta flex flex-col">
-               <a class="font-extrabold text-2xl">Ciptakan Momenmu</a>
-               <a>Bukan sekedar perjalanan, tetapi pengalaman yang akan kamu bawa pulang.</a>
-          </div>
-     </div>
-     
-     <div class="mt-6 mb-15 flex flex-col gap-5">
-          <div class="flex overflow-hidden">
-               <div class="flex w-max shrink-0 animate-carousel">
-                    <div class="flex shrink-0 items-center">
-                         <img src="{{ asset('img/carousel/adsd_4_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/DSC04364_1_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/asda_5_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/DSC04546_2_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/IMG_8203_6_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/DSC04601_8_11zon.webp') }}" class="h-[225px] w-auto">
-                    </div>
-
-                    <div class="flex shrink-0 items-center">
-                         <img src="{{ asset('img/carousel/adsd_4_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/DSC04364_1_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/asda_5_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/DSC04546_2_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/IMG_8203_6_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/DSC04601_8_11zon.webp') }}" class="h-[225px] w-auto">
-                    </div>
-               </div>
-          </div>
-
-          <div class="flex overflow-hidden">
-               <div class="flex w-max shrink-0 animate-carousel1">
-                    <div class="flex shrink-0 items-center">
-                         <img src="{{ asset('img/carousel/IMG_8273_7_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/MOV06964_3_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/WhatsApp Image 2026-10-08 at 14.07.45_6_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/MOV07309_5_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/MOV07350_1_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/WhatsApp Image 2026-10-08 at 14.07.57_3_11zon.webp') }}" class="h-[225px] w-auto">
-                    </div>
-
-                    <div class="flex shrink-0 items-center">
-                         <img src="{{ asset('img/carousel/IMG_8273_7_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/MOV06964_3_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/WhatsApp Image 2026-10-08 at 14.07.45_6_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/WhatsApp Image 2026-10-08 at 14.07.53_7_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/MOV07350_1_11zon.webp') }}" class="h-[225px] w-auto">
-                         <img src="{{ asset('img/carousel/WhatsApp Image 2026-10-08 at 14.07.57_3_11zon.webp') }}" class="h-[225px] w-auto">
-                    </div>
-               </div>
-          </div>
-     </div>
-</section>
-<!-- End Gallery -->
-
-<!-- Footer -->
-<section class="w-full min-h-screen bg-[url('/public/img/main-image3.webp')] bg-no-repeat bg-center bg-cover">
+<section class="w-full min-h-screen bg-[url('/public/img/main-image3.webp')] bg-no-repeat bg-center bg-cover mt-20">
      <div class="flex items-center w-full min-h-screen">
           <div class="bg-white flex flex-row py-15 px-18 mx-15 w-full justify-between">
                <div class="flex flex-col gap-15">
@@ -400,7 +250,7 @@
                                              </a>
                                         </li>
                                         <li>
-                                             <a href="#galeri" class="relative transition-all duration-300 inline-block font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-[#C99A3E] hover:text-[#C99A3E] hover:after:w-full after:transition-all after:duration-300 after:ease-out">
+                                             <a href="{{ url('/#galeri') }}" class="relative transition-all duration-300 inline-block font-medium after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:w-0 after:h-[2px] after:bg-[#C99A3E] hover:text-[#C99A3E] hover:after:w-full after:transition-all after:duration-300 after:ease-out">
                                                   Galeri
                                              </a>
                                         </li>
@@ -454,4 +304,4 @@
           </div>          
      </div>
 </section>
-@endsection
+@section('content')

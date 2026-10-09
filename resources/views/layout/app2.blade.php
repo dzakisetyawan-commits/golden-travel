@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +16,11 @@
 <body>
     <nav class="bg-white/10 backdrop-blur-md border border-white/25 fixed z-50 w-full top-0 left-0 flex flex-row justify-between px-10 py-4 items-center">
           <div class="flex flex-row items-center justify-between w-full">
+               <p class="text-black font-bold">LOGO</p>
+               
                <x-g-button onclick="window.location.href='{{ url('/') }}'">
                     Kembali
                </x-g-button>
-               <p class="text-black font-bold">LOGO</p>
           </div>
     </nav>
     @yield('content')
